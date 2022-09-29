@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Labs</title>
+    <!-- Fontes -->
+    <link rel="stylesheet" href="https://use.typekit.net/wbm2uhg.css">
+    <link rel="stylesheet" href="css/fontes.css">
+
+    <!-- Land Css -->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="js/animate.js"></script>
+
+    <!-- MidnightJs -->
+    <script src="https://cdn.jsdelivr.net/combine/npm/jquery@1.11,npm/midnight.js@1.1"></script>
+
+    <!-- PIXI -->
+    <script src="./lib/pixi.js"></script>
+
+    <!-- Rellax -->
+    <script src="lib/rellax.min.js"></script>
+
+    <script>
+        // Start midnight
+        $(document).ready(function(){
+          // Change this to the correct selector.
+          $('nav.fixed').midnight();
+        });
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="fixed">
+        <div class="midnightHeader default">
+            <img src="img/logo.png" alt="">
+            <h1 class="montserrat-bold">Moon Labs</h1>
+            <div class="nav">
+
+                <a class="montserrat-regular">Nossa Equipe</a>
+                <a class="montserrat-regular">Contato</a>
+            </div>
+        </div>
+        <div class="midnightHeader branco">
+            <img src="img/logo.png" alt="">
+            <h1 class="montserrat-bold">Moon Labs</h1>
+            <div class="nav">
+
+                <a class="montserrat-regular">Nossa Equipe</a>
+                <a class="montserrat-regular">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Land -->
+    <section class="land">
+        <h1 data-rellax-speed="-2" class="criatividade montserrat-bold">Criatividade <br> fora de órbita</h1>
+        <div data-rellax-speed="-2" class="lua" id="lua"></div>
+        <div class="background-land"></div>
+    </section>
+
+    <!-- Powered -->
+    <section id="powered" class="powered">
+        <!-- Background -->
+        <div id="background-powered" class="background-powered"></div>
+        <div id="display" class="display">
+            <h1 id="displayer" class="displayer montserrat-bold">HOOF</h1>
+            <p id="displayer-paragrafo" class="displayer-paragrafo montserrat-regular">Plataforma de adoção de animais</p>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper swiper-2">
+            <div class="swiper-wrapper swiper-wrapper-2">
+                <div id="hoof" name="hoof" class="swiper-slide-2 swiper-slide">
+                    <img id="hoof-logo" src="./img/powered/hoof-logo.png" alt="">
+                </div>
+                <div id="temazcal" name="temazcal" class="swiper-slide-2 swiper-slide">
+                    <img id="temazcal-logo" src="./img/powered/temazcal.png" alt="">
+                </div>
+                    <div id="travado" name="blocked" class="swiper-slide-2 swiper-slide">
+                    <img id="travado-logo" src="./img/powered/travado.svg" alt="">
+                </div>
+                <div id="travado" name="blocked" class="swiper-slide-2 swiper-slide">
+                    <img id="travado-logo" src="./img/powered/travado.svg" alt="">
+                </div>
+                <div id="travado" name="blocked" class="swiper-slide-2 swiper-slide">
+                    <img id="travado-logo" src="./img/powered/travado.svg" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="powered-container">
+            <p class="powered-by montserrat-regular">Powered by <span class="montserrat-light">MoonLabs</span></p>
+        </div>
+    </section>
+    <!-- Servicos -->
+    <section class="servicos" data-midnight="branco">
+        <div class="background-servico"></div>
+        <div class="flex-box">
+            <div id="servico-1" class="servico">
+                <h1 class="montserrat-bold">Sites</h1>
+                <div class="line"></div>
+                <p class="montserrat-regular">Criamos experiências únicas no sistema solar para atender seuus usuários</p>
+                <button class="montserrat-light">Saiba Mais</button>
+            </div>
+            <div id="servico-2" class="servico">
+                <h1 class="montserrat-bold">Consultoria</h1>
+                <div class="line"></div>
+                <p class="montserrat-regular">Conte com a nossa expertise para impulsionar sua empresa na velocidade da luz</p>
+                <button class="montserrat-light">Saiba Mais</button>
+            </div>
+            <div id="servico-3" class="servico">
+                <h1 class="montserrat-bold">Automação</h1>
+                <div class="line"></div>
+                <p class="montserrat-regular">Lance seu comércio na web e escalone seu negócio para o infinito e além</p>
+                <button class="montserrat-light">Saiba Mais</button>
+            </div>
+        </div>
+        <div id="servicos-3d" class="servicos-3d"></div>
+        <div id="servico-pixi" class="servico-pixi"></div>
+    </section>
+    
+    <!-- Slides -->
+    <section class="slides">
+        <!-- Swiper -->
+        <div class="solucoes-container">
+            <h1 class="montserrat-bold">
+                Soluções internacionais
+            </h1>
+            <p class="montserrat-regular">
+                Com mais de cem milhões de usuários ativos na internet, o Brasil toma a posição de uma das nações que mais consomem conteúdo na internet, incluindo jogos, blogs e redes sociais.
+                Trazer seu negócio para o brasil deixa de ser um extra, e passa a ser parte da sua empresa.
+            </p>
+        </div>
+        <div class="swiper-1 swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div id="slide1"  class="swiper-slide-1 swiper-slide slide1 no-flick">
+                    <div class="container">
+                        <div class="conteudo-slide">
+                            <h1 id="slide-h1-1" class="montserrat-regular">Brasil é o quinto país que mais investe tempo em games</h1>
+                            <p id="slide-p-1" class="montserrat-bold">- Comscore</p>
+                        </div>
+                        <div class="background-sec3"></div>
+                    </div>
+                </div>
+                <div id="slide2" class="swiper-slide-1 swiper-slide slide2 no-flick">
+                    <div class="container">
+                        <div class="conteudo-slide">
+                            <h1 id="slide-h1-2" class="montserrat-regular">Brasil é top 10 no ranking de países que mais jogam jogos eletrônicos</h1>
+                            <p id="slide-p-2" class="montserrat-bold">- Consultoria Newzoo</p>
+                        </div>
+                        <div class="background-sec3"></div>
+                    </div>
+                </div>
+                <div id="slide3"  class="swiper-slide-1 swiper-slide slide3 no-flick">
+                    <div class="container">
+                        <div class="conteudo-slide">
+                            <h1 id="slide-h1-3" class="montserrat-regular">Brasil já ultrapassa marca de 150 milhões de usuários na internet</h1>
+                            <p id="slide-p-3" class="montserrat-bold">- Comitê gestor da internet do Brasil</p>
+                        </div>
+                        <div class="background-sec3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <!-- Wizard -->
+    <section class="wizard" id="wizard">
+        <div class="wizard-conteudo" data-rellax-speed="2">
+            <h1 class="montserrat-bold">Seu jogo na Web.</h1>
+            <p class="montserrat-regular">Traga seus personagens para seu site.</p>
+        </div>
+    </section>
+    <!--------------->
+    <!-- Footer -->
+    <footer>
+        <div class="footer-flex">
+            <div class="footer-item">
+                <h1 class="montserrat-bold footer-titulo">moonlabs.org</h1>
+            </div>
+            <div class="footer-item footer-contato">
+                <h1 class="montserrat-bold">Contato</h1>
+                <hr>
+                <a class="montserrat-regular">moonlabs.team@gmail.com</a>
+                <a class="montserrat-regular" href="https://wa.me/+5548996625754" target="_blank">Whatsapp</a>
+                <a class="montserrat-regular" href="https://t.me/Tupyo" target="_blank">Telegram</a>
+
+            </div>
+            <div class="footer-item footer-agradecimento">
+                <h1 class="montserrat-bold">Agradecimentos</h1>
+                <hr>
+                <a class="montserrat-regular" href="https://sketchfab.com/chrisleeX" target="_blank">@ChrisLee</a>
+            </div>
+            <div class="footer-item">
+                <img src="img/logo.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <script src="js/servico-pixi.js"></script>
+    <script src="js/powered.js"></script>
+    <script src="js/slides-swiper.js"></script>
+    <script type="module" src="js/lua.js"></script>
+    <script type="module" src="js/wizard.js"></script>
+    <script>
+        var rellax = new Rellax('.wizard-conteudo');
+        var rellax = new Rellax('.criatividade');
+        var rellax = new Rellax('.lua');
+    </script>
+</body>
+</html>
